@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question</title>
+</head>
+<body>
+
+<h1>CSS Day1 Interview Question.</h1>
+
+Question 1: Difference between flex row and flex column?<br>
+answer := Flex row arranges items horizontally, while flex column arranges items vertically.<br><br>
+for Example:<br>
+<div style="display: flex; flex-direction: row;">
+    <div style="background-color: lightblue; padding: 10px;">Item 1</div>
+    <div style="background-color: lightgreen; padding: 10px;">Item 2</div>
+    <div style="background-color: lightcoral; padding: 10px;">Item 3</div>
+</div>
+<br>
+<div style="display: flex; flex-direction: column;">
+    <div style="background-color: lightblue; padding: 10px;">Item 1</div>
+    <div style="background-color: lightgreen; padding: 10px;">Item 2</div>
+    <div style="background-color: lightcoral; padding: 10px;">Item 3</div>
+</div><br><br>
+
+Question 2:Explain inline , internal and external stylesheet.<br>
+answer := Inline styles are applied directly to HTML elements
+using the "style" attribute. Internal styles are defined within a style tag in the head section of the HTML document.
+External styles are written in separate CSS files and linked to the HTML document using the link tag.<br><br>
+
+Question 3: Justify-content allows you to do what?<br>
+answer := Justify-content is a CSS property used in flexbox and grid layouts 
+to align and distribute space between items along the main axis of the container.<br><br>
+
+Question 4: Difference between absolute and relative positioning<br>
+answer := Absolute positioning removes an element from the normal document
+flow and positions it relative to its closest positioned ancestor
+(i.e., an ancestor with a position other than static). In contrast, relative positioning keeps
+the element in the document flow and positions it relative to its original position.<br>
+for example:<br>
+<div style="position: relative;">
+    <div style="position: absolute; top: 10px; left: 10px;">Absolute Positioning</div>
+    <div style="position: relative; top: 20px; left: 20px;">Relative Positioning</div>
+</div>
+<br><br><br>
+
+Question 5: What is the z-index in CSS?<br>
+answer := The z-index is a CSS property that determines the stacking order of positioned elements 
+(i.e., elements with a position value other than static). Elements with a higher z-index value 
+are stacked on top of elements with a lower z-index value. This property is particularly useful
+for controlling the visibility of overlapping elements.<br>
+for example:<br>
+<div style="position: relative;">
+    <div style="position: absolute; top: 10px; left: 10px; z-index: 1;">Z-Index 1</div>
+    <div style="position: absolute; top: 20px; left: 20px; z-index: 2;">Z-Index 2</div>
+    <div style="position: absolute; top: 30px; left: 30px; z-index: 3;">Z-Index 3</div>
+</div>
+<br><br><br>
+
+Question 6: What is the difference between padding and margin?<br>
+answer := Padding is the space between the content of an element and its border,
+while margin is the space outside the border of an element.
+Padding creates space inside an element, whereas margin creates space outside of it.<br>
+for example:<br>
+<div style="padding: 20px; background-color: lightblue;">Padding Example</div>
+<div style="margin: 20px; background-color: lightgreen;">Margin Example</div>
+</body>
+</html>
