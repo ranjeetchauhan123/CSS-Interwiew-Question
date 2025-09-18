@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question</title>
+</head>
+<body>
+
+Question 1:= Explain the diff. Btw Relative and Absloute position property? <br>
+Answer := Absolute positioning removes an element from the normal document
+flow and positions it relative to its closest positioned ancestor
+(i.e., an ancestor with a position other than static). In contrast, relative positioning keeps
+the element in the document flow and positions it relative to its original position.<br>
+Ex:=
+<div style="position: relative;">
+    <div style="position: absolute; top: 10px; left: 10px;">Absolute Positioning</div>
+    <div style="position: relative; top: 20px; left: 20px;">Relative Positioning</div>
+</div>
+<br><br><br>
+Question 2:= Create a Pie Chart with equal percentage.
+Answer:= The use of conic-gradient property.<br>
+ex :=
+<div class="pie"></div>
+<style>
+.pie {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    red 0% 25%,
+    blue 25% 50%,
+    green 50% 75%,
+    orange 75% 100%
+  );
+}
+</style>
+
+Question 3:= Write the Code for opacity.<br>
+Answer := opacity sets the transparency of an element (0 = invisible 1 = fully visible).<br>
+ex=
+<div class="opacity"></div>
+<style>
+    .opacity{
+  width: 100px;
+  height: 100px;
+  background: teal;
+  opacity: 0.2; /* 20% transparent  visible*/
+}
+</style>
+
+Question 4:= Create the Square Cards using Hover effect.<br>
+Answer := 
+<div class="card">Hover Effect</div>
+<style>
+.card {
+  width: 150px;
+  height: 150px;
+  background: #4caf50;
+  color: white;
+  transition: 2s;
+}
+.card:hover {
+  background: #388e3c;
+  transform: scale(1);
+}
+</style>
+
+Question 5:= Create the Example of 3D cards using CSS .<br>
+Answer := 
+<div class="main">
+    <div class="cart">3D Cart</div>
+</div>
+<style>
+    .main{
+        perspective: 1000px;
+    }
+    .cart{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        color: white;
+        margin-left: 50px;
+        transform: skewX(30deg);
+    } 
+</style>
+
+Question 6:= Write the code for Rotate the card at Z-axis angle 40 degree.<br>
+Answer := 
+<div class="rotate"></div>
+<style>
+.rotate{
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background: rgb(0, 128, 107);
+  transform: rotateZ(40deg);
+}
+</style>
+</body>
+</html>
